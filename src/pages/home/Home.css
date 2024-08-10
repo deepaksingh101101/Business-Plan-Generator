@@ -1,0 +1,51 @@
+/* Default styles for large screens */
+.redBg {
+    top: 6rem;
+    left: 24rem;
+    height: 350px;
+}
+
+.blueBg {
+    top: 0;
+    left: 14rem;
+    height: 350px;
+}
+
+/* Empty media query for screens smaller than 860px */
+@media (max-width: 860px) {
+    /* Add specific styles for smaller screens if needed */
+    .redBg {
+        top: 6rem;    
+        left: 0;
+
+    }
+    
+    .blueBg {
+        top: 0rem;
+        left: -7rem;
+
+    }
+
+
+    
+}
+
+
+@media (max-width: 542px) {
+    .redBg {
+        top: 6rem;    
+        left: -10rem;
+        height: 350px;
+
+    }
+    
+    .blueBg {
+        top: 0rem;
+        left: -7rem;
+        height: 350px;
+
+    }
+
+
+    
+} 

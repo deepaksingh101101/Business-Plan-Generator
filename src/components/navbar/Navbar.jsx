@@ -3,6 +3,7 @@ import './Navbar.css'
 
 export default function Navbar() {
   return (
+    <>
     <div className="bg-[#F4FAFF]">
       <div className='flex justify-between lg:px-[30px] md:px-[30px] sm:px-[25px] px-[9px] py-5'>
         <img 
@@ -15,5 +16,7 @@ export default function Navbar() {
         </button>
       </div>
     </div>
+    <div className="navbar-bg"></div>
+    </>
   )
 }

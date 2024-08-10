@@ -5,7 +5,7 @@
 }
 
 
-.continueBtnShadow{
+.continueBtnShadow,.loginIf{
   transition: box-shadow .3s ease, transform .3s ease, background-color .3s ease;
   }
   
@@ -14,4 +14,8 @@
   box-shadow: 0 10px 30px -10px #2cc1ff;
   transform: translateY(-3px);
   color: #fff;
+  }
+
+.loginIf:hover{
+    transform: translateY(-3px);
   }
