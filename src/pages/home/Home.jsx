@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 import bg1 from '../../assets/images/bg1.webp'
 import bg2 from '../../assets/images/bg2.webp'
 import './Home.css'
+import ServiceCard from "../../components/serviceCard/ServiceCard";
 export default function Home() {
   return (
-    <div className="w-full flex flex-col justify-center relative" >
+    <div className="w-full flex flex-col justify-center relative bg-[#F4FAFF]" >
 
 <div className="languageSelector flex  mt-10 justify-center items-center ">
 <HiMiniLanguage   className="h-[23px] text-[#51677B] me-2 w-[23px]" />
@@ -44,6 +45,13 @@ export default function Home() {
 
 {/* <img  className="absolute top-0 z-[-1]  " src={bg1} alt="bg1"  /> */}
 
+<div className="flex my-48 ">
+  <h1 className="text-[54px] font-medium px-40" >Who is this for?</h1>
+</div>
+
+<div className="px-40 my-40">
+  <ServiceCard/>
+</div>
     </div>
   )
 }
