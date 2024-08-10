@@ -1,0 +1,8 @@
+.shadow-on-hover{
+    transition: box-shadow .3s ease-in-out;
+}
+
+.shadow-on-hover:hover{
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .1), 0 2px 4px rgba(0, 0, 0, .04);
+
+}

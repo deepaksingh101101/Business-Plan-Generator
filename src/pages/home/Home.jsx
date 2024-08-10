@@ -7,7 +7,7 @@ import './Home.css'
 import ServiceCard from "../../components/serviceCard/ServiceCard";
 export default function Home() {
   return (
-    <div className="w-full flex flex-col justify-center relative bg-[#F4FAFF]" >
+    <div className="w-full flex flex-col justify-center relative " >
 
 <div className="languageSelector flex  mt-10 justify-center items-center ">
 <HiMiniLanguage   className="h-[23px] text-[#51677B] me-2 w-[23px]" />
@@ -45,13 +45,16 @@ export default function Home() {
 
 {/* <img  className="absolute top-0 z-[-1]  " src={bg1} alt="bg1"  /> */}
 
-<div className="flex my-48 ">
-  <h1 className="text-[54px] font-medium px-40" >Who is this for?</h1>
+<div className="flex flex-col bg-[#F4FAFF] ">
+<div className="flex mt-16 lg:mt-48 ">
+  <h1 className=" text-[32px] lg:text-[54px] font-medium px-7 lg:px-28 " >Who is this for?</h1>
 </div>
 
-<div className="px-40 my-40">
+<div className="my-6 flex justify-center">
   <ServiceCard/>
 </div>
+</div>
+
     </div>
   )
 }
