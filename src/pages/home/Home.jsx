@@ -1,12 +1,16 @@
 
 import { HiMiniLanguage } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import stars from '../../assets/images/star.svg';
+
 import bg1 from '../../assets/images/bg1.webp'
 import bg2 from '../../assets/images/bg2.webp'
 import './Home.css'
+import ServiceCard from "../../components/serviceCard/ServiceCard";
+import RatingCard from "../../components/rartingCard/RatingCard";
 export default function Home() {
   return (
-    <div className="w-full flex flex-col justify-center relative" >
+    <div className="w-full flex flex-col justify-center relative " >
 
 <div className="languageSelector flex  mt-10 justify-center items-center ">
 <HiMiniLanguage   className="h-[23px] text-[#51677B] me-2 w-[23px]" />
@@ -43,6 +47,35 @@ export default function Home() {
 </div>
 
 {/* <img  className="absolute top-0 z-[-1]  " src={bg1} alt="bg1"  /> */}
+
+<div className="flex flex-col bg-[#F4FAFF] ">
+<div className="flex mt-16 lg:mt-48 ">
+  <h1 className=" text-[32px] lg:text-[54px] font-medium px-7 lg:px-28 " >Who is this for?</h1>
+</div>
+
+<div className="my-6 flex justify-center">
+  <ServiceCard/>
+</div>
+
+<div className="my-6 lg:px-24 flex justify-center">
+  <RatingCard/>
+</div>
+
+<div className="flex flex-col items-center gap-2 text-black mt-3">
+  <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-2">
+    <div className="flex flex-row items-center gap-2 mr-4">
+      <span className="text-lg" >Reviews Form</span>
+      <div className="flex items-center -mt-2">
+        <img style={{width:"120px", height:"30px"}} src="https://plannit.ai/assets/trustpilot.svg" alt="" />
+      </div>
+    </div>
+    <img src={stars} style={{width:"160px",height:"24px"}} alt="" />
+    <div className="text-lg text-center sm:text-left sm:ml-4">TrustScore <strong>4.7</strong> | <strong>74</strong> Reviews</div>
+  </div>
+  <span className="text-xl mt-2">Excellent</span>
+</div>
+
+</div>
 
     </div>
   )
