@@ -5,6 +5,7 @@ import bg1 from '../../assets/images/bg1.webp'
 import bg2 from '../../assets/images/bg2.webp'
 import './Home.css'
 import ServiceCard from "../../components/serviceCard/ServiceCard";
+import RatingCard from "../../components/rartingCard/RatingCard";
 export default function Home() {
   return (
     <div className="w-full flex flex-col justify-center relative " >
@@ -53,6 +54,13 @@ export default function Home() {
 <div className="my-6 flex justify-center">
   <ServiceCard/>
 </div>
+
+<div className="my-6 lg:px-24 flex justify-center">
+  <RatingCard/>
+</div>
+
+
+
 </div>
 
     </div>
