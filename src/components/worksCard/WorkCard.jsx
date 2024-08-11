@@ -21,9 +21,9 @@ const workData = [
 
 export default function WorkCard() {
   return (
-    <div className="outer flex justify-around  flex-wrap lg:flex-nowrap  mt-16 px-3 mb-40 max-w-[1200px]">
+    <div className="outer flex justify-around gap-4 lg:gap-8 flex-wrap  mt-16 px-3 mb-40 max-w-[1200px]">
       {workData.map((work, index) => (
-        <div key={index} className="flex flex-col bg-[#EDF6FC]  w-full lg:w-[550px] px-[20px] lg:px-[35px] py-[40px] sm:me-5 md:me-5 lg:me-5  shadow-on-hover rounded-[24px] mb-8">
+        <div key={index} className="flex flex-col bg-[#EDF6FC]  w-full lg:w-[550px] px-[20px] lg:px-[35px] py-[40px]   shadow-on-hover rounded-[24px] mb-8">
           <div className="bg-white p-[20px] rounded-[24px] max-w-[80px] relative">
             <img src={work.image} style={{ height: '40px', width: '40px' }} alt={work.alt} />
             <span className="bg-black text-white font-semibold absolute top-[-6px] right-[-6px] px-[10px] rounded-[50%]">

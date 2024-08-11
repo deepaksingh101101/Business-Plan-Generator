@@ -12,9 +12,9 @@ import WorkCard from "../../components/worksCard/WorkCard";
 import KeyBenifits from "../../components/keyBenifits/KeyBenifits";
 export default function Home() {
   return (
-    <div className="w-full flex flex-col justify-center relative " >
+    <div className="w-full z-[4] flex flex-col justify-center relative " >
 
-<div className="languageSelector flex  mt-10 justify-center items-center ">
+<div className="languageSelector  flex  mt-10 justify-center items-center ">
 <HiMiniLanguage   className="h-[23px] text-[#51677B] me-2 w-[23px]" />
 <Link className="underline text-[#51677B]" >change language</Link>
 </div>

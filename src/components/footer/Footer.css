@@ -46,17 +46,20 @@
 }
 
 /* Empty media query for screens smaller than 860px */
-@media (max-width: 860px) {
+@media (max-width: 1170px) {
   /* Add specific styles for smaller screens if needed */
   .redBgf {
-      top: 6rem;    
-      left: 0;
-
+      top: 0rem;    
+      left: 0rem;
+      height: 400px;
+      width: 400px;
   }
   
   .blueBgf {
       top: 0rem;
-      left: -7rem;
+      left: 15rem;
+      height: 400px;
+      width: 400px;
 
   }
 
@@ -65,18 +68,18 @@
 }
 
 
-@media (max-width: 542px) {
+@media (max-width: 660px) {
   .redBgf {
-      top: 6rem;    
-      left: -10rem;
-      height: 350px;
+      top: 0rem;    
+      left: -5rem;
+      height: 300px;
 
   }
   
   .blueBgf {
-      top: 0rem;
-      left: -7rem;
-      height: 350px;
+      top: -5rem;
+      left: 0rem;
+      height: 300px;
 
   }
 
