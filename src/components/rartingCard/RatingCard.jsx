@@ -27,7 +27,7 @@ const ratingData = [
 
 export default function RatingCard() {
   return (
-    <div className="mx-auto px-4 py-8 flex flex-col items-center justify-center gap-4">
+    <div className="mx-auto px-4  flex flex-col items-center justify-center gap-4">
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
         {ratingData.map((rating, index) => (
           <div key={index} className="flex flex-col bg-[#EDF6FC] shadow-on-hover py-5 px-4 rounded-lg">
