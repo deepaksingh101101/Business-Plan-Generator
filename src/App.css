@@ -19,3 +19,18 @@
 .loginIf:hover{
     transform: translateY(-3px);
   }
+
+  .shadow-on-hover-red,.shadow-on-hover-blue{
+    box-shadow: 0 15px 50px -5px rgba(55,103,126,.05);
+    transition: box-shadow .3s ease-in-out;
+    border-radius: 24px;
+    
+  }
+
+  .shadow-on-hover-red:hover {
+    box-shadow: 0 4px 14px rgba(255, 96, 96, .184), 0 2px 4px rgba(255, 81, 81, .105);
+}
+.shadow-on-hover-blue:hover {
+  box-shadow: 0 4px 14px rgba(96, 221, 255, .184), 0 2px 4px rgba(96, 221, 255, .105);
+}
+

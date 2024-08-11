@@ -8,11 +8,13 @@ import bg2 from '../../assets/images/bg2.webp'
 import './Home.css'
 import ServiceCard from "../../components/serviceCard/ServiceCard";
 import RatingCard from "../../components/rartingCard/RatingCard";
+import WorkCard from "../../components/worksCard/WorkCard";
+import KeyBenifits from "../../components/keyBenifits/KeyBenifits";
 export default function Home() {
   return (
-    <div className="w-full flex flex-col justify-center relative " >
+    <div className="w-full z-[4] flex flex-col justify-center relative " >
 
-<div className="languageSelector flex  mt-10 justify-center items-center ">
+<div className="languageSelector  flex  mt-10 justify-center items-center ">
 <HiMiniLanguage   className="h-[23px] text-[#51677B] me-2 w-[23px]" />
 <Link className="underline text-[#51677B]" >change language</Link>
 </div>
@@ -57,8 +59,10 @@ export default function Home() {
   <ServiceCard/>
 </div>
 
-<div className="my-6 lg:px-24 flex justify-center">
+<div className="my-6 lg:px-24 flex justify-center w-full">
+  <div className="flex justify-center max-w-[1200px]">
   <RatingCard/>
+  </div>
 </div>
 
 <div className="flex flex-col items-center gap-2 text-black mt-3">
@@ -74,6 +78,25 @@ export default function Home() {
   </div>
   <span className="text-xl mt-2">Excellent</span>
 </div>
+
+
+<div className="flex flex-col mt-9  lg:px-28 ">
+<h1 className="text-start text-[32px] lg:text-[54px] font-medium mb-6 mt-5  px-6 lg:px-12">How it works?</h1>
+<p className='text-xl text-slate-400 lg:pe-[170px]  px-6 lg:px-12  '>Our AI business plan generator guides you through a few questions, once done a business plan example will be generated</p>
+<div className="flex justify-center">
+<WorkCard/>
+</div>
+</div>
+
+
+
+<div className="flex flex-col  lg:px-24 ">
+<h1 className="text-start mb-16 text-[32px] lg:text-[54px] font-medium    px-6 lg:px-12 ">Key Benefits</h1>
+<div className=" flex justify-center ">
+<KeyBenifits/>
+</div>
+</div>
+
 
 </div>
 

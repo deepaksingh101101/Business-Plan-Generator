@@ -1,0 +1,88 @@
+
+
+@media (max-width: 366px) and (min-width: 320px) {
+
+  .topBtn{
+    width: 100px;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-right: 0;
+  }
+  .fontCustom{
+    font-size: 10px !important;
+  }
+  .customf{
+    font-size: 14px;
+  }
+ 
+  }
+  
+
+  .navbar-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    background-color: #f4faff;
+    box-shadow: 0 20px 30px 0 rgba(55, 103, 126, .05);
+}
+
+/* Bg image */
+/* Default styles for large screens */
+
+
+.blueBgf {
+  top: -200px;
+  left: 100px;
+  height: 700px;
+}
+.redBgf {
+  height: 720px;
+  width: 1100px;
+  top: 0;
+  left: -300px;
+}
+
+/* Empty media query for screens smaller than 860px */
+@media (max-width: 1170px) {
+  /* Add specific styles for smaller screens if needed */
+  .redBgf {
+      top: 0rem;    
+      left: 0rem;
+      height: 400px;
+      width: 400px;
+  }
+  
+  .blueBgf {
+      top: 0rem;
+      left: 15rem;
+      height: 400px;
+      width: 400px;
+
+  }
+
+
+  
+}
+
+
+@media (max-width: 660px) {
+  .redBgf {
+      top: 0rem;    
+      left: -5rem;
+      height: 300px;
+
+  }
+  
+  .blueBgf {
+      top: -5rem;
+      left: 0rem;
+      height: 300px;
+
+  }
+
+
+  
+} 
